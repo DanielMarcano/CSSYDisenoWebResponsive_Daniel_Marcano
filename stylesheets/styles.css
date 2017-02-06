@@ -155,6 +155,43 @@ footer {
     padding: 1em;
   }
 
+/* retratos.html, paisajes.html*/
+[class^="p"] {
+  width: 33.33%;
+}
+
+article > img {
+  width: 90%;
+}
+
+.gallery {
+    width: 100%;
+    background-color: #82c3a6;
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 1;
+    order: 2;
+}
+
+.gallery > article:nth-child(1) {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.gallery > article:nth-child(even) {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.gallery > article:nth-child(3) {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+
+
+
+
 }
 
 
@@ -184,7 +221,8 @@ footer {
 
   footer {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    order: 3;
   }
 
   li img {
@@ -199,6 +237,23 @@ footer {
   .f1, .f2, .f3, .f4 {
     width: 100%;
     padding: 1em;
+  }
+
+  [class^="p"] {
+    width: 100%;
+  }
+
+  article > img {
+    width: 80%;
+    margin: 10%;
+  }
+
+  .gallery {
+      width: 100%;
+      background-color: #82c3a6;
+      display: flex;
+      flex-flow: column wrap;
+      order: 2;
   }
 
 
