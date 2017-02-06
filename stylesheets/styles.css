@@ -11,19 +11,29 @@ body {
   color: white;
 }
 
-h1 {
-  text-align: left;
-  text-shadow: 2px 2px #02010a;
+header {
+  background-color: #567989;
   border-radius: 12px;
+  width: 100%;
+}
+
+h1 {
+  text-shadow: 2px 2px #02010a;
+  width: 40%;
+  padding-left: 1em;
 }
 
 nav, li, h1 {
   display: inline-block;
 }
 
+nav {
+  width: 40%;
+  text-align: right;
+}
+
 nav ul {
   list-style: none;
-  vertical-align: center;
 }
 
 nav a {
@@ -34,4 +44,22 @@ img {
   margin: 5%;
   background-color: #82c3a6;
   box-shadow: 2px 2px #02010a;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+@media all and (min-width: 900px) {
+  .contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+@media all and (max-width: 900px) {
+  .contenedor {
+    width: 100%;
+  }
 }
