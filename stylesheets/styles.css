@@ -2,5 +2,36 @@
 
 @font-face {
   font-family: "Dancing Script";
-  src: url('DancingScript-Regular.otf');
+  src: url('../fonts/DancingScript-Regular.otf');
+}
+
+body {
+  font-family: "Dancing Script", Helvetica, Arial, sans-serif;
+  background-color: #02010a;
+  color: white;
+}
+
+h1 {
+  text-align: left;
+  text-shadow: 2px 2px #02010a;
+  border-radius: 12px;
+}
+
+nav, li, h1 {
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+  vertical-align: center;
+}
+
+nav a {
+  color: white;
+}
+
+img {
+  margin: 5%;
+  background-color: #82c3a6;
+  box-shadow: 2px 2px #02010a;
 }
