@@ -13,7 +13,8 @@ body {
 
 header {
   background-color: #567989;
-  border-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   width: 100%;
 }
 
@@ -40,23 +41,56 @@ nav a {
   color: white;
 }
 
-img {
-  margin: 5%;
+.main {
   background-color: #82c3a6;
+}
+
+img {
+  margin: 2%;
   box-shadow: 2px 2px #02010a;
+}
+
+[class^="img"] {
+  margin: 2%;
+}
+
+.img-main {
+  margin: 5%;
+}
+
+.secondary {
+  background-color: #d5c75f;
 }
 
 .no-decoration {
   text-decoration: none;
 }
 
+
 @media all and (min-width: 900px) {
   .contenedor {
     max-width: 900px;
     margin: 0 auto;
-    /*display: flex;
-    flex-flow: column wrap;*/
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 50%;
   }
+
+  .header {
+    order: 1;
+  }
+
+  .main {
+    width: 100%;
+    order: 2;
+  }
+
+  .secondary {
+    width: 100%;
+    order: 3;
+  }
+
+
 
 @media all and (max-width: 900px) {
   .contenedor {
