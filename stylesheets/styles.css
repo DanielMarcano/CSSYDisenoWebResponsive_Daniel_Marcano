@@ -74,6 +74,17 @@ img {
   text-decoration: none;
 }
 
+.img-left:hover {
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3ab;
+  transition: all 1s;
+}
+
+.img-right:hover {
+  transform: translate(20px, -5px);
+  transition: all 1s;
+  box-shadow: 2px 2px #82c3a6;
+}
 
 @media all and (min-width: 900px) {
 
