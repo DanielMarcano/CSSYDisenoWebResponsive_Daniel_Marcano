@@ -40,10 +40,13 @@ nav {
   text-align: right;
 }
 
-nav ul {
+ul {
   list-style: none;
   margin: 0;
   padding: 1em;
+}
+
+nav ul {
   font-size: 1.4em;
 }
 
@@ -56,7 +59,7 @@ nav a {
   background-color: #82c3a6;
 }
 
-img {
+[class^="img"] {
   margin: 2%;
   box-shadow: 2px 2px #02010a;
 }
@@ -89,6 +92,14 @@ img {
   box-shadow: 2px 2px #82c3a6;
 }
 
+footer {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #C6d5c5;
+  width: 100%;
+  font-size: 1.2em;
+}
+
 @media all and (min-width: 900px) {
 
   h1 {
@@ -96,7 +107,7 @@ img {
     padding-left: 1.5em;
   }
 
-  nav, li, h1 {
+  nav, nav li, h1 {
     display: inline-block;
   }
 
@@ -123,8 +134,25 @@ img {
     order: 3;
   }
 
+  footer {
+    display: flex;
+    flex-flow: row nowrap;
+    order: 4;
+  }
+
+  li img {
+    width: 15%;
+    padding: 1%;
+  }
+
+
   .s1, .s2 {
     width: 50%;
+  }
+
+  .f1, .f2, .f3, .f4 {
+    width: 25%;
+    padding: 1em;
   }
 
 }
@@ -145,7 +173,7 @@ img {
     text-align: center;
   }
 
-  img {
+  [class^="img"] {
     width: 90%;
   }
 
@@ -154,8 +182,23 @@ img {
     flex-flow: column wrap;
   }
 
+  footer {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  li img {
+    width: 10%;
+    padding: 1%;
+  }
+
   .s1, .s2 {
     width 100%;
+  }
+
+  .f1, .f2, .f3, .f4 {
+    width: 100%;
+    padding: 1em;
   }
 
 
