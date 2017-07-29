@@ -1,0 +1,397 @@
+/*
+** Autor: Daniel Marcano
+** Email: danielmarcanodev@gmail.com
+** GitHub: www.github.com/DanielMarcano
+*/
+/*
+** General
+*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand/Quicksand-Light.otf"); }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-direction:before {
+  content: "\e903"; }
+
+.icon-mail-envelope-closed:before {
+  content: "\e902"; }
+
+.icon-mobile:before {
+  content: "\e901"; }
+
+.icon-phone:before {
+  content: "\e901"; }
+
+.icon-cellular:before {
+  content: "\e901"; }
+
+.icon-instagram:before {
+  content: "\ea92"; }
+
+.icon-facebook-official:before {
+  content: "\e900"; }
+
+body {
+  font-family: "Quicksand", Helvetica, Arial, sans-serif;
+  background-color: #02010a;
+  -webkit-animation-name: slidein;
+  animation-name: slidein;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  color: #FFF; }
+
+@-webkit-keyframes slidein {
+  0% {
+    margin-top: 150%; }
+  60% {
+    margin-top: -5%; }
+  100% {
+    margin-top: 0%; } }
+
+@keyframes slidein {
+  0% {
+    margin-top: 150%; }
+  60% {
+    margin-top: -5%; }
+  100% {
+    margin-top: 0%; } }
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%; }
+
+header {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 100%;
+  color: white; }
+
+nav {
+  width: 42%;
+  text-align: right; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 1em; }
+
+nav ul {
+  font-size: 1.4em; }
+
+nav a {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  color: white;
+  margin-left: 5px; }
+
+.img-main {
+  margin: 5%; }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+footer article {
+  width: 100%;
+  text-align: center;
+  font-size: 1em; }
+
+.footer-link {
+  position: relative;
+  top: 2px;
+  left: -2px; }
+
+/*
+** index.html
+*/
+.link-restart {
+  color: white;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  text-decoration: none; }
+  .link-restart:hover {
+    color: white;
+    text-decoration: none; }
+  .link-restart:visited {
+    text-decoration: none; }
+
+.nav-link {
+  color: white;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  text-decoration: none; }
+  .nav-link:hover {
+    color: #F61067;
+    text-decoration: none; }
+  .nav-link:visited {
+    text-decoration: none; }
+
+.active-link {
+  color: #4B5267;
+  pointer-events: none; }
+
+.social-link {
+  margin: 5%; }
+
+.icon-instagram {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .icon-instagram:hover {
+    color: #7A28CB; }
+
+.icon-facebook-official {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .icon-facebook-official:hover {
+    color: #1C77C3; }
+
+.main {
+  position: relative; }
+
+.img-main {
+  width: 33.33%; }
+
+[class^="secret"] {
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  opacity: 0; }
+
+.img-main:nth-child(1):hover + .secret-1 {
+  opacity: 1; }
+
+.secret-1 {
+  left: 420px; }
+
+.img-main:nth-child(3):hover + .secret-2 {
+  opacity: 1; }
+
+.secret-2 {
+  left: 432px; }
+
+.img-main:nth-child(5):hover + .secret-3 {
+  opacity: 1; }
+
+.secret-3 {
+  left: 403px; }
+
+.img-main {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  width: 200px; }
+  .img-main:hover {
+    -webkit-box-shadow: 2px 2px #FFF;
+    box-shadow: 2px 2px #FFF; }
+
+.main-gallery {
+  margin-top: 5%; }
+
+.main-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3; }
+
+.main-gallery-container {
+  width: 33.33%; }
+
+.main-gallery-container > img {
+  width: 100%; }
+  .main-gallery-container > img:hover + h3 {
+    color: #DA4167; }
+
+h3 {
+  text-align: center;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
+
+/*
+** barcelona.html & personal.html
+*/
+.barcelona-gallery, .personal-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2; }
+
+.barcelona-gallery img:nth-child(even) {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
+  .barcelona-gallery img:nth-child(even):hover {
+    -webkit-filter: blur(2px);
+    filter: blur(2px); }
+
+.barcelona-gallery img:nth-child(odd) {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
+  .barcelona-gallery img:nth-child(odd):hover {
+    -webkit-filter: invert(75%);
+    filter: invert(75%); }
+
+.personal-gallery img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
+
+.personal-gallery .text-container:hover .img-text {
+  opacity: 1; }
+
+.personal-gallery .text-container:nth-child(n) {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
+  .personal-gallery .text-container:nth-child(n):hover img {
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+    -webkit-filter: blur(5px);
+    filter: blur(5px); }
+
+.img-text {
+  position: absolute;
+  color: white;
+  text-shadow: 1px 1px black;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.personal-gallery {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.personal-gallery .text-container {
+  width: 33.33%; }
+
+.text-container {
+  position: relative; }
+
+@media all and (min-width: 900px) {
+  /*
+  ** General
+  */
+  h1 {
+    width: 50%;
+    padding-left: 1.5em; }
+  nav, nav li, h1 {
+    display: inline-block; }
+  header {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+  .main {
+    max-height: 450px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+  .img-main {
+    width: 200px; }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4; }
+  footer > article {
+    width: 33.33%; }
+  .contact {
+    text-align: left; }
+  .img-media {
+    width: 15%;
+    padding: 1%; }
+  .barcelona-gallery img {
+    width: 33.33%;
+    max-height: 60vh; } }
+
+@media all and (max-width: 900px) {
+  /*
+  ** General
+  */
+  .wrapper {
+    width: 100%; }
+  h1 {
+    width: 100%;
+    text-align: center; }
+  nav {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center; }
+    nav li {
+      margin: 20px 0px; }
+  .img-main {
+    width: 33.33%;
+    margin-left: 33%;
+    margin-top: 10%; }
+  footer {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    text-align: center; }
+  [class^="f"] {
+    width: 100%;
+    padding: 1em; }
+  .img-media {
+    width: 10%;
+    padding: 1%; }
+  [class^="secret"] {
+    position: static;
+    opacity: 1; }
+  .barcelona-gallery img {
+    width: 33.33%;
+    max-height: 30vh; } }

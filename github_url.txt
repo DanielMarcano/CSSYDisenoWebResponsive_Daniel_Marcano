@@ -1,3 +1,0 @@
-URL de mi proyecto en GitHub:
-
-https://github.com/DanielMarcano/CSSYDisenoWebResponsive_Daniel_Marcano.git
