@@ -116,31 +116,6 @@ nav a {
   color: white;
   margin-left: 5px; }
 
-.img-main {
-  margin: 5%; }
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap; }
-
-footer article {
-  width: 100%;
-  text-align: center;
-  font-size: 1em; }
-
-.footer-link {
-  position: relative;
-  top: 2px;
-  left: -2px; }
-
-/*
-** index.html
-*/
 .link-restart {
   color: white;
   -webkit-transition: all 0.7s;
@@ -167,6 +142,28 @@ footer article {
   color: #4B5267;
   pointer-events: none; }
 
+.img-main {
+  margin: 5%; }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+footer article {
+  width: 100%;
+  text-align: center;
+  font-size: 1em; }
+
+.footer-link {
+  position: relative;
+  top: 2px;
+  left: -2px; }
+
 .social-link {
   margin: 5%; }
 
@@ -182,6 +179,9 @@ footer article {
   .icon-facebook-official:hover {
     color: #1C77C3; }
 
+/*
+** index.html
+*/
 .main {
   position: relative; }
 
@@ -330,13 +330,6 @@ h3 {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1; }
-  .main {
-    max-height: 450px;
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2; }
-  .img-main {
-    width: 200px; }
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -352,9 +345,19 @@ h3 {
     width: 33.33%; }
   .contact {
     text-align: left; }
-  .img-media {
-    width: 15%;
-    padding: 1%; }
+  /*
+  ** index.html
+  */
+  .main {
+    max-height: 450px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+  .img-main {
+    width: 200px; }
+  /*
+  ** barcelona.html
+  */
   .barcelona-gallery img {
     width: 33.33%;
     max-height: 60vh; } }
@@ -383,15 +386,15 @@ h3 {
     -ms-flex-order: 3;
     order: 3;
     text-align: center; }
-  [class^="f"] {
-    width: 100%;
-    padding: 1em; }
-  .img-media {
-    width: 10%;
-    padding: 1%; }
+  /*
+  ** index.html
+  */
   [class^="secret"] {
     position: static;
     opacity: 1; }
+  /*
+  ** barcelona.html
+  */
   .barcelona-gallery img {
     width: 33.33%;
     max-height: 30vh; } }
