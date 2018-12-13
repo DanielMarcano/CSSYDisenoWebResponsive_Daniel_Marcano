@@ -1,0 +1,1 @@
+let greeting;var greetingAndBye=A=>{console.log(A)};greetingAndBye("I did not know this was going to happen... MAMAAAAAAAAAA.");

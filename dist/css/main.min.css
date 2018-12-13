@@ -79,7 +79,7 @@ body {
   100% {
     margin-top: 0%; } }
 
-.wrapper {
+/*.wrapper {
   max-width: 900px;
   margin: 0 auto;
   display: -webkit-box;
@@ -90,7 +90,7 @@ body {
   -ms-flex-flow: column wrap;
   flex-flow: column wrap;
   -ms-flex-preferred-size: 50%;
-  flex-basis: 50%; }
+  flex-basis: 50%; }*/
 
 header {
   border-top-left-radius: 12px;
@@ -398,3 +398,66 @@ h3 {
   .barcelona-gallery img {
     width: 33.33%;
     max-height: 30vh; } }
+
+  .giphy-search {
+    position: relative;
+    color: white;
+    background-color: black;
+    /*height: auto;*/
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    flex-basis: 1;
+  }
+
+  #gifName::placeholder {
+    /*color: turquoise;*/
+    text-align: center;
+  }
+
+  #gifName {
+    flex-grow: 2;
+  }
+
+  .changeColor::placeholder {
+    color: turquoise;
+  }
+
+  .searchButton {
+    border: 1px solid turquoise;
+    background-color: black;
+    /*box-shadow: 1px 1px #ccc;*/
+    color: white;
+    transition: all 1s;
+    flex-grow: 1;
+  }
+
+  .searchButton:hover {
+    color: white;
+    cursor: pointer;
+    background-color: turquoise;
+    transition: all 1s;
+  }
+
+  .giphyResultImage {
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+  }
+
+  .mainPage {
+    position: relative;
+    top: 200px;
+  }
+
+  #giphyResults {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 1;
+    justify-content: space-between;
+  }

@@ -1,0 +1,35 @@
+{
+  "name": "Fotopoesia",
+  "version": "1.0.0",
+  "description": "Fotopoesía",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielMarcano/Fotopoesia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jshintConfig": {
+    "esversion": 6
+  },
+  "bugs": {
+    "url": "https://github.com/DanielMarcano/Fotopoesia/issues"
+  },
+  "homepage": "https://github.com/DanielMarcano/Fotopoesia#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-html-build": "^0.7.1",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify-es": "^0.1.4"
+  }
+}

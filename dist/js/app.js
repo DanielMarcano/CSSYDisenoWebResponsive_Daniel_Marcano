@@ -1,0 +1,1 @@
+$(function(){$("#gifName").on("hover",function(o){$(this).toggleClass("changeColor")})});
